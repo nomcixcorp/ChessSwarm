@@ -27,3 +27,10 @@ export interface ChessComGameRaw {
 export interface ChessComMonthlyArchiveRaw {
   games?: ChessComGameRaw[];
 }
+
+/**
+ * Shape returned by `GET /pub/player/{username}/games/archives`.
+ */
+export interface ChessComArchivesListRaw {
+  archives?: string[];
+}

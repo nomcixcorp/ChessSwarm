@@ -23,7 +23,12 @@ export interface AiInsightsResult {
   summary: string;
   strengths: string[];
   weaknesses: string[];
+  openingRecommendation: string;
+  tacticalRecommendation: string;
   trainingPlan: TrainingPlanItem[];
+  caveats: string[];
+  /** 0-1 confidence score based on evidence quality and sample size. */
+  confidence: number;
   /** Optional trace for debugging: metric keys or ids cited in the summary. */
   groundedMetricRefs?: string[];
 }
