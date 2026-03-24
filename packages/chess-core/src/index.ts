@@ -1,4 +1,5 @@
-/**
- * Deterministic chess analytics (Track D — not implemented in this scaffold).
- */
-export {};
+export {
+  buildDeterministicAnalytics,
+  type DeterministicAnalyticsBuildResult,
+  type RepresentativeGame,
+} from "./analysis.js";
